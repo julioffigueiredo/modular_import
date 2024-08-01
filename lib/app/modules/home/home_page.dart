@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
               print(store?.counter);
 
               Cliente? cliente = Modular.tryGet<Cliente>();
-              print('Cliente: ${cliente?.nome}');
+              print('Cliente: ${cliente?.nome} \n End: ${cliente?.endereco.endereco}');
             },
             child: Icon(Icons.abc_rounded),
           ),
